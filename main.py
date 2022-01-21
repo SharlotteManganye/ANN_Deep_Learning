@@ -81,7 +81,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 sc = StandardScaler()
 
 X_train = sc.fit_transform(X_train)
-X_test = sc.fit_transform(X_test)
+X_test = sc.transform(X_test)
 
 n_input = X_train.shape[1]
 hidden_units = int(n_input)
